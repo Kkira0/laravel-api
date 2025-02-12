@@ -63,5 +63,7 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         //
+        $post->delete();
+        return ['message' => 'The post was deleted'];
     }
 }
